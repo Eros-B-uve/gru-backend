@@ -40,7 +40,7 @@ export class User {
   resetPasswordToken!: string | null;
 
   //Fecha de expiración del token de restablecimiento de contraseña, puede ser nula
-  @Column({ type: 'datetime', nullable: true })
+  @Column({ type: 'timestamp', nullable: true })
   resetPasswordExpires!: Date | null;
 
   //Fecha de creación del usuario, se establece automáticamente al crear el registro
